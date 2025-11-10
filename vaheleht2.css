@@ -1,0 +1,27 @@
+.header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(192, 192, 192);
+    padding: 16px;
+}
+
+body {
+    margin: 1;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    display: flex;
+    padding: 16px;
+    gap: 8px;
+
+}
+
+.sisu {
+    border: 10px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 192px;
+    gap: 8px;
+}
