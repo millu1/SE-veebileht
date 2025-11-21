@@ -1,93 +1,62 @@
-<!DOCTYPE html>
 <html lang="et">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Tudengiampsud</title>
+
 <style>
 body {
 margin: 0;
-font-family: Arial, sans-serif;
+font-family: system-ui, sans-serif;
 }
+
 header {
+padding: 40px 20px 40px;
 display: flex;
+flex-direction: column;
 align-items: center;
-justify-content: space-between;
-padding: 40px;
-}
-header img {
-width: 150px;
-height: 150px;
-border-radius: 50%;
-background: #ddd; /* placeholder */
+justify-content: center;
 }
 
-
-.intro-section {
-display: flex;
-gap: 40px;
-padding: 40px;
-align-items: center;
-}
-.intro-section img {
+.logo-placeholder {
 width: 300px;
 height: 300px;
-background: #ccc; /* placeholder */
+background: #ddd;
+border-radius: 50%;
+margin-bottom: 20px;
 }
 
-
-.recipes-section {
-padding: 40px;
-}
-.recipes-grid {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 40px;
-margin-top: 20px;
-}
-.recipe-card img {
-width: 100%;
-height: 250px;
-background: #bbb; /* placeholder */
-}
-.recipe-card p {
+h1 {
+font-size: 5rem;
+letter-spacing: 0.3em;
+text-transform: uppercase;
 text-align: center;
-padding: 10px 0;
-font-size: 18px;
-font-weight: bold;
+margin: 0;
+}
+
+.intro {
+max-width: 800px;
+text-align: center;
+font-size: 1.5rem;
+line-height: 1.4;
+margin-top: 40px;
+}
+
+.intro strong {
+font-size: 2.5rem;
+display: block;
+margin-bottom: 20px;
 }
 </style>
 </head>
+
 <body>
 <header>
-<img src="pildid/pilt1.jpg" alt="Logo" />
-<h1>Tudengiampsud</h1>
-</header>
+<div class="logo-placeholder"></div>
+<h1>TUDENGIAMPSUD</h1>
 
-<div class="intro-section">
-<div>
-<h2>Tere tulemast!</h2>
-<p>Siin leiad lihtsaid ja kiireid retsepte, mis sobivad igale tudengile. Maitsvad toidud, mis ei nõua palju aega ega vaeva!</p>
-</div>
-<img src="pildid/pilt1.jpg" alt="Toit" />
-</div>
-
-<div class="recipes-section">
-<h2>Retseptid</h2>
-<div class="recipes-grid">
-<a href="retsept1.html" style="text-decoration: none; color: inherit;">
-<div class="recipe-card">
-<img src="pildid/pilt1.jpg" alt="Retsept 1" />
-<p>Retsept 1</p>
-</div>
-</a>
-<a href="retsept2.html" style="text-decoration: none; color: inherit;">
-<div class="recipe-card">
-<img src="pildid/pilt1.jpg" alt="Retsept 2" />
-<p>Retsept 2</p>
-</div>
-</a>
-</div>
-</div>
-</body>
+<div class="intro">
+<strong>Ahoi, näljased tudengid!</strong>
+Siit leiad lihtsad, soodsad, kuid üllatavalt maitsvad retseptid, mis sobivad suurepäraselt kiire elutempo ja piiratud eelarvega tudengile. Olgu sul poole tunni pärast loeng või külmkapis vaid paar koostisosa – meie retseptid aitavad sul kiiresti ja taskukohaselt kõht täis saada.<br><br>
+Ei mingit pikka hautamist ega uhkeid koostisosi – ainult toitainerikkad ja isuäratavad eined, mis valmivad ka siis, kui aega ja energiat napib. 
+<br> Head isu ja julget katsetamist!
 </html>
