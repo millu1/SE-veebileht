@@ -1,7 +1,4 @@
-/* Üldine stiil kogu lehele:
-   - nullib vaikimisi margini
-   - seab fondiks Times New Roman
-   - paneb taustavärvi ja teksti värvi */
+/* Üldine stiil */
 body {
     margin: 0;
     font-family: "Times New Roman", Times, serif;
@@ -9,9 +6,8 @@ body {
     color: #5c4d3f;
 }
 
-/* Ülemine päiseriba: hoiab logo ja navigeerimise ühel real,
-   joondab elemendid vertikaalselt keskele ja paneb halli tausta */
-.pais {
+/* Ülemine päis */
+.päis {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,14 +15,14 @@ body {
     padding: 16px;
 }
 
-/* Päise vasak pool: logo + link pealehele kõrvuti väikese vahega */
-.pais-vasak {
+/* Päise vasak pool: logo ja link pealehele */
+.päis-vasak {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-/* Logo pilt: ümmargune, kindla suurusega, pilt lõigatakse raami sisse */
+/* Logo pilt */
 .logo {
     width: 60px;
     height: 60px;
@@ -34,9 +30,7 @@ body {
     object-fit: cover;
 }
 
-/* Pealehele viiv link:
-   - suur, paks tekst
-   - väike vahe logost */
+/* Pealehele viiv link */
 .pealehe-link {
     font-size: 32px;
     font-weight: bold;
@@ -45,15 +39,7 @@ body {
     margin-left: 50px;
 }
 
-/* Pealehe link hiirega üle minnes: näita allajoonimist ja käe-kursorit */
-.pealehe-link:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-/* Põhisisu ümbris:
-   - veidi vahet päisest
-   - sisu plokid üksteise all, vahedega */
+/* Sisu ümbris: */
 .sisu-ala {
     margin-top: 60px;
     display: flex;
@@ -69,10 +55,7 @@ body {
     margin-left: 100px;
 }
 
-/* Pildi kast:
-   - musta raamiga ja ümarate nurkadega
-   - kindla laiuse ja kõrgusega
-   - pilt lõigatakse kasti sisse */
+/* Pildi kast */
 .pildi-kast {
     border: 8px solid black;
     border-radius: 40px;
@@ -81,7 +64,7 @@ body {
     overflow: hidden;
 }
 
-/* Pilt kastis täidab kogu ala proportsioone hoides */
+
 .pildi-kast img {
     width: 100%;
     height: 100%;
@@ -89,23 +72,18 @@ body {
     display: block;
 }
 
-/* Tutvustuse kast:
-   - sama lai kui pildi kast
-   - hele taust, ümardatud nurgad
-   - sisemised ääred (padding) teksti jaoks */
+/* Tutvustuse kast */
 .tutvustus-kast {
     width: 500px;
     min-height: 350px;
-    height: auto; /* laseb vajadusel kõrgusel kasvada */
+    height: auto; 
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 40px;
     box-sizing: border-box;
 }
 
-/* Tutvustuse pealkirjakast:
-   - veidi väiksem laius kui kogu tutvustuse kast
-   - ümardatud nurgad, väike sisemine vahe */
+/* Tutvustuse pealkirjakast */
 .tutvustus-kast .pealkirja-kast {
     width: 420px;
     padding: 10px 20px;
@@ -114,11 +92,7 @@ body {
     align-self: start;
 }
 
-/* Üldine pealkirjakast:
-   - helehall taust
-   - ümardatud nurgad
-   - keskjoondatud tekst
-   - väike vahe allpool asuva sisuga */
+/* Üldine pealkirjakast */
 .pealkirja-kast {
     background-color: #dddddd;
     border-radius: 15px;
@@ -127,10 +101,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* Koostisosade ja juhiste osa:
-   - kaks plokki kõrvuti (vasakul koostisosad, paremal juhised)
-   - vasak ja parem sisemine marginaal
-   - vahe plokkide vahel (gap) */
+/* Koostisosade ja juhiste osa */
 .jaotised {
     display: flex;
     justify-content: flex-start;
@@ -138,13 +109,12 @@ body {
     gap: 60px;
 }
 
-/* Üldiselt iga jaotis (kast) saab laiuse automaatselt vastavalt sisule */
+
 .jaotis {
     width: auto;
 }
 
-/* Esimene jaotis (Koostisosad) on kitsam,
-   et parempoolsele juhiste kastile jääks rohkem ruumi */
+
 .jaotis:first-child {
     width: 300px;
 }
@@ -156,18 +126,13 @@ body {
     line-height: 1.45;
 }
 
-/* Juhiste jaotis:
-   - laiem kast, et tekst saaks rohkem rea pikkust
-   - veidi nihutatud paremale koostisosade kastist */
+/* Juhiste jaotis */
 .juhiste-jaotis {
-    width: 650px;       /* laiem kast, tekst katab rohkem ekraani */
-    margin-left: 195px; /* parajalt vahet koostisosade kastiga */
+    width: 650px;    
+    margin-left: 195px; 
 }
 
-/* "Veel retsepte" plokk:
-   - asub all pool
-   - veidi kaugemal vasakust servast
-   - elemendid üksteise all */
+/* "Veel retsepte" plokk */
 .teised-retseptid {
     margin: 75px 0 80px 100px;
     display: flex;
@@ -181,16 +146,14 @@ body {
     align-self: flex-start;
 }
 
-/* Ühe retsepti kaart "Veel retsepte" blokis */
+
 .retsepti-kaart {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-/* Link, mis ümbritseb retsepti pilti ja teksti:
-   - hoiab pildi ja teksti ühes plokis
-   - eemaldab vaikimisi allajoonimise */
+/* Link, mis ümbritseb retsepti pilti ja teksti */
 .retsepti-link {
     display: flex;
     flex-direction: column;
@@ -200,15 +163,7 @@ body {
     color: inherit;
 }
 
-/* Pildile kerge suurendusefekt, kui hiirega üle minna */
-.retsepti-link:hover .retsepti-pilt {
-    transform: scale(1.02);
-}
-
-/* Retsepti pilt:
-   - kindel suurus
-   - ümardatud nurgad
-   - pilt lõigatakse raami sisse */
+/* Retsepti pilt */
 .retsepti-pilt {
     width: 300px;
     height: 200px;
