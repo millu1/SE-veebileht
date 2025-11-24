@@ -1,22 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
-    <link rel="stylesheet" href="vaheleht2.css" type="text/css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaheleht2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vaheleht2.css" type="text/css">
 </head>
 <body>
-    <div class="header">
-        <h1>Retsept 2 vaheleht</h1>
-        <h2>Tutvustus</h2>
-    </div>
-    <div class="main">
-        <h2>Loetelu</h2>
-        <div class="sisu">
-            <img src="cute-dog-1-1263806849.jpg " width="300" height="200">
+
+    <!-- Ülemine päis: logo + link pealehele -->
+    <div class="pais">
+        <div class="pais-vasak">
+            <img src="logo.png" alt="Logo" class="logo">
+            <a href="pealeht.html" class="pealehe-link">Pealeht</a>
         </div>
+        <h2></h2>
     </div>
-    
+
+    <!-- Lehe põhiline sisuplokk -->
+    <div class="sisu-ala">
+
+        <!-- Pilt + tutvustuse kast kõrvuti -->
+        <div class="tutvustus-rida">
+            <div class="pildi-kast">
+                <img src="mhm.jpg" alt="Noodles" class="sisu-pilt">
+            </div>
+
+            <div class="tutvustus-kast">
+                <div class="pealkirja-kast">
+                    <h2>Tutvustus</h2>
+                </div>
+                <p>
+                    Tutvustus, kirjeldus, hind, jne.
+                </p>
+            </div>
+        </div>
+
+        <!-- Koostisosad & Juhised -->
+        <div class="jaotised">
+            <!-- Vasak pool: koostisosade loetelu -->
+            <div class="jaotis">
+                <div class="pealkirja-kast">
+                    <h2>Koostisosad</h2>
+                </div>
+                <ul class="lista">
+                    <li>113 g lo mein nuudleid</li>
+                    <li>2 spl võid</li>
+                    <li>1/4 tl purustatud tšillihelbeid</li>
+                    <li>2 suurt muna</li>
+                    <li>1 spl pruuni suhkrut</li>
+                    <li>1 spl sojakastet</li>
+                    <li>2 spl srirachat</li>
+                    <li>1 peotäis värsket koriandrit (valikuline)</li>
+                    <li>1 roheline sibul, viilutatud</li>
+                </ul>
+            </div>
+
+            <!-- Parem pool: juhiste loetelu -->
+            <div class="jaotis juhiste-jaotis">
+                <div class="pealkirja-kast">
+                    <h2>Juhised</h2>
+                </div>
+                <ol class="juhised-list">
+                    <li>Valmista nuudlikaste. Sega väikeses kausis pruun suhkur, sojakaste ja sriracha. Tõsta kaste kõrvale ootele.</li>
+                    <li>Aja potis nuudlite jaoks vesi keema. Kui vesi keeb, lisa nuudlid ja keeda, kuni need on pehmed. Kurna nuudlid sõelal.</li>
+                    <li>Seni kuni vesi keema läheb, löö kaks muna kaussi ja klopi need kergelt lahti.</li>
+                    <li>Kuumuta pannil keskmisel kuumusel või, lisa munad ja purustatud pipar ning sega neid õrnalt, kuni moodustub munapuder. Väldi munade üle küpsetamist.</li>
+                    <li>Kui nuudlid on ära nõrutatud, lisa need pannile munade juurde ja nirista peale kaste. Sega nuudlid ja munad korralikult läbi, et need kastmega kattuksid.</li>
+                    <li>Puista nuudlite peale värsket koriandrit ja viilutatud rohelist sibulat ning serveeri.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Teised retseptid -->
+        <div class="teised-retseptid">
+            <div class="pealkirja-kast">
+                <h2>Veel retsepte</h2>
+            </div>
+
+            <div class="retsepti-kaart">
+                <a href="retsept1.html" class="retsepti-link">
+                    <img src="retsept1.jpg" alt="Maitsev roog" class="retsepti-pilt">
+                    <p class="retsepti-tekst">Maitsev roog</p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
