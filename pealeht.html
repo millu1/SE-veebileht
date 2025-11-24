@@ -9,7 +9,7 @@
 body {
 margin: 0;
 font-family: 'Times New Roman', serif;
-background: #d7d2ce;
+background: #ceccc9;
 color: #5c4d3f;
 }
 
@@ -84,6 +84,14 @@ margin-bottom: 10px;
 .recipe h2 {
 font-size: 1.8rem;
 margin: 0;
+line-height: 1.2;
+}
+
+.recipe h2 .subtitle {
+display: block;
+font-size: 1.2rem;
+margin-top: 6px;
+opacity: 0.8;
 }
 </style>
 </head>
@@ -104,11 +112,18 @@ margin: 0;
 <section class="recipes">
 <a href="retsept1.html" class="recipe">
 <div class="recipe-img"></div>
-<h2>Retsept 1</h2>
+<h2>
+    Retsept 1
+    <span class="subtitle">Eelmise päeva praetud riis ja muna</span>
+</h2>
 </a>
+
 <a href="retsept2.html" class="recipe">
 <div class="recipe-img"></div>
-<h2>Retsept 2</h2>
+<h2>
+    Retsept 2
+    <span class="subtitle">Mannavaht</span>
+</h2>
 </a>
 </section>
 </body>
