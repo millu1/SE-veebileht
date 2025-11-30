@@ -9,7 +9,7 @@ document.querySelectorAll('.button').forEach(button => {
 });
 
 
-/* Logo animatsioon */
+/* Logo animatsioon Google Gemini abiga*/
 
 const logo = document.querySelector('.logo');
 
