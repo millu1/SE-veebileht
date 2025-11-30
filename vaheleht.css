@@ -182,7 +182,7 @@ img {
     box-sizing: border-box;
 }
 
-/* Javascript (test) */
+/* Javascript (test) */ 
 .button div {
     display: inline-block;
     white-space: nowrap;
@@ -193,7 +193,12 @@ img {
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.button span:hover {
+.button:hover span {
+    transform: translateY(-4px);
+    color: #000;
+}
+
+.retsepti-link:hover .button span {
     transform: translateY(-4px);
     color: #000;
 }
