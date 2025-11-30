@@ -6,7 +6,7 @@ body {
 }
 
 img {
-    display: block; /* Eemaldab piltide alt tühja riba */
+    display: block; 
 }
 
 /* Päis */
@@ -182,7 +182,7 @@ img {
     box-sizing: border-box;
 }
 
-/* Javascript (test) */ 
+/* Javascript */ 
 .button div {
     display: inline-block;
     white-space: nowrap;
