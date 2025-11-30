@@ -1,4 +1,3 @@
-/* Üldine stiil */
 body {
     margin: 0;
     font-family: "Times New Roman", Times, serif;
@@ -6,146 +5,147 @@ body {
     color: #5c4d3f;
 }
 
-/* Ülemine päis */
-.päis {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(192, 192, 192);
-    padding: 16px;
+img {
+    display: block; /* Eemaldab piltide alt tühja riba */
 }
 
-/* Päise vasak pool: logo ja link pealehele */
+/* Päis */
+.päis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(192, 192, 192);
+    padding: 1.5%;
+}
+
 .päis-vasak {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 2%;
 }
 
-/* Logo pilt */
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 4vw;
+    height: 4vw;
     border-radius: 50%;
     object-fit: cover;
 }
 
-/* Pealehele viiv link */
 .pealehe-link {
-    font-size: 32px;
+    font-size: 2vw;
     font-weight: bold;
     color: #5c4d3f;
     text-decoration: none;
-    margin-left: 50px;
+    margin-left: 20%;
 }
 
-/* Sisu ümbris: */
+/* Sisu */
 .sisu-ala {
-    margin-top: 60px;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 4%;
 }
 
-/* Ülemine rida: pilt ja tutvustuse kast kõrvuti */
+/* Hall pealkirja-kast */
+.pealkirja-kast {
+    background-color: #dddddd;
+    border-radius: 1.2vw;
+    padding: 2%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+/* Tutvustus (pilt ja tekst) */
 .tutvustus-rida {
     display: flex;
     align-items: center;
-    gap: 40px;
-    margin-left: 100px;
+    gap: 5%;
+    margin-left: 7%;
 }
 
 /* Pildi kast */
 .pildi-kast {
-    border: 8px solid black;
-    border-radius: 40px;
-    width: 500px;
-    height: 350px;
+    width: 30%;
+    height: 20vw;
+    border: 0.8vw solid black;
+    border-radius: 2.5vw;
     overflow: hidden;
 }
-
 
 .pildi-kast img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
-/* Tutvustuse kast */
+/* Teksti kast */
 .tutvustus-kast {
-    width: 750px;
-    min-height: 350px;
-    height: auto; 
+    width: 50%;
+    min-height: 21.5vw;
     background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 40px;
+    padding: 2%;
+    border-radius: 3vw;
     box-sizing: border-box;
+    flex: 0 0 50%; 
 }
 
-/* Tutvustuse pealkirjakast */
+/* Pealkiri tutvustuse sees */
 .tutvustus-kast .pealkirja-kast {
-    width: 670px;
-    padding: 10px 20px;
-    border-radius: 20px;
+    width: 96%;
     margin-top: 0;
-    align-self: start;
+    border-radius: 1.5vw;
 }
 
-/* Üldine pealkirjakast */
-.pealkirja-kast {
-    background-color: #dddddd;
-    border-radius: 15px;
-    padding: 16px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-/* Koostisosade ja juhiste osa */
+/* Koostisosad ja juhised */
 .jaotised {
     display: flex;
-    justify-content: flex-start;
-    margin: 0 100px;
-    gap: 60px;
+    align-items: flex-start;
+    margin: 3% 7%;
+    gap: 8%;
 }
 
-
-.jaotis {
-    width: auto;
-}
-
-
+/* Koostisosade tulp */
 .jaotis:first-child {
-    width: 300px;
+    width: 20%;
 }
 
-/* Koostisosade ja juhiste loeteluridade vahed suuremaks, et oleks loetavam */
+/* Juhiste tulp */
+.juhiste-jaotis {
+    width: 55%;
+    margin-left: 12.3%;
+}
+
+/* Halli tausta eemaldus */
+.jaotised .pealkirja-kast,
+.juhiste-jaotis .pealkirja-kast {
+    background: none;
+    text-align: left;
+}
+
+/* Loetelude stiil */
 .lista li,
 .juhised-list li {
-    margin-bottom: 12px;
+    margin-bottom: 1.2%;
     line-height: 1.45;
 }
 
-/* Juhiste jaotis */
-.juhiste-jaotis {
-    width: 650px;    
-    margin-left: 195px; 
-}
-
-/* "Veel retsepte" plokk */
+/* Veel retsepte */
 .teised-retseptid {
-    margin: 75px 0 80px 100px;
+    margin: 5% 0 6% 7%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 2%;
 }
 
-/* "Veel retsepte" pealkiri joondub vasakule */
+/* Pealkiri pildi kohal */
 .teised-retseptid .pealkirja-kast {
-    align-self: flex-start;
+    width: 23vw;
+    padding: 0.1vw 0;
+    border-radius: 2vw;
+    margin-bottom: 1%;
 }
-
 
 .retsepti-kaart {
     display: flex;
@@ -153,26 +153,47 @@ body {
     align-items: flex-start;
 }
 
-/* Link, mis ümbritseb retsepti pilti ja teksti */
 .retsepti-link {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 10%;
     text-decoration: none;
     color: inherit;
 }
 
-/* Retsepti pilt */
 .retsepti-pilt {
-    width: 300px;
-    height: 200px;
+    width: 22vw;
+    height: 14vw;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 3vw;
+    border: 0.8vw solid black;
     transition: transform 0.15s ease-in-out;
 }
 
-/* Retsepti tekst (pealkiri pildi all) */
 .retsepti-tekst {
-    font-size: 18px;
+    width: 23vw;
+    padding: 1.5%;
+    margin-top: 3%;
+    border-radius: 1.5vw;
+    background-color: #dddddd;
+    font-size: 1.4vw;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Javascript (test) */
+.button div {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.button span {
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.button span:hover {
+    transform: translateY(-4px);
+    color: #000;
 }
